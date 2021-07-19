@@ -135,6 +135,6 @@ AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
 ### 最后 ###
   教程很直白了，应该都会弄吧！
 
-  代码小白，多包涵！有问题/修改建议可以点击上方issues发布一下，或者PY给我:
+  有问题/修改建议可以点击上方issues发布一下，或者PY给我:
   donxan@gmail.com
 
