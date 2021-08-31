@@ -1,5 +1,4 @@
 # AutoApiSecret-加密版
-AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
 
 # 置顶 #
 * 本项目是建立在可以正确调用api的**假设**上的，核心py脚本。
