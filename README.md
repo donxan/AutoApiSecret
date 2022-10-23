@@ -23,7 +23,7 @@
      ​      
 
 ### 区别 ###
-   [普通版（弃用）]：密钥暴露，不在乎的话可以使用
+   [普通版（弃用）]：密钥暴露，不在乎的话可以使用。
 
    [加密版（推荐）](https://github.com/donxan/AutoApiSecret/edit/main/README.md)：应用id机密加密隐藏，提高安全性
 
