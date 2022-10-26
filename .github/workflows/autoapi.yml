@@ -14,7 +14,7 @@ on:
   watch:
     types: [started]
   repository_dispatch:
-    types: [webapi]
+    types: [webapi]
 
 jobs:
   build:
