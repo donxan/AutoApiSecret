@@ -2,19 +2,19 @@
 name: Auto Api Secret
 
 on: 
-  release:
-    types: [published]
-  push:
-    # tags:
-    # - 'v*'
-    branches: 
-      - main
+  # release:
+  #   types: [published]
+  # push:
+  #   # tags:
+  #   # - 'v*'
+  #   branches: 
+  #     - main
   # schedule:
-    # - cron: '8 */5 * * *'
-  watch:
-    types: [started]
-  repository_dispatch:
-    types: [webapi]
+  #   - cron: "0 9,13,16 * * 1-5"
+  # watch:
+  #   types: [started]
+  # repository_dispatch:
+  #   types: [webapi]
 
 jobs:
   build:
@@ -42,7 +42,6 @@ jobs:
         sed -i '12 r configkey.txt' 2.py
     - name: Test Api #Api调用
       run: | 
-        echo $(curl -SsL http://quan.suning.com/getSysTime.do | awk -F '"' '{print $4}') begin >> time.log
         python 2.py
     - name: Delete secrets config #删除机密
       run: | 
