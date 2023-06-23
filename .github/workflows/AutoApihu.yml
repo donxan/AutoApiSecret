@@ -5,15 +5,16 @@ on:
   release:
     types: [published]
   push:
-    tags:
-    - 'v*'
-  #  branches: 
-  #    - master
+    # tags:
+    # - 'v*'
+    branches: 
+    - main
   schedule:
     - cron: "0 9,13,16 * * 1-5"
   watch:
     types: [started]
-   
+  repository_dispatch:
+    types: [webapi]
 jobs:
   build:
     runs-on: ubuntu-latest
