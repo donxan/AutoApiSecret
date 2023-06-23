@@ -10,11 +10,11 @@ import argparse
 #注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--config-id', required=True)
-parser.add_argument('--config-key', required=True)
+parser.add_argument('--config_id', required=True)
+parser.add_argument('--config_key', required=True)
 args=parser.parse_args()
-id=args.config-id
-secret=args.config-key
+id=args.config_id
+secret=args.config_key
 
 
 path=sys.path[0]+r'/1.txt'

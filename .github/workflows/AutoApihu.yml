@@ -44,4 +44,4 @@ jobs:
         
     - name: Test Api #Api调用
       run: | 
-        python 1.py --config-id ${{ secrets.ID }} --config-key ${{ secrets.KEY }}
+        python 1.py --config_id ${{ secrets.ID }} --config_key ${{ secrets.KEY }}
