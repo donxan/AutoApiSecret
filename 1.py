@@ -2,6 +2,7 @@
 import requests as req
 import json, sys, time, random
 import argparse
+import os
 # import parser
 #先注册azure应用,确保应用有以下权限:
 #files:	Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
@@ -10,14 +11,14 @@ import argparse
 # 注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
 
-
-
-parser = argparse.ArgumentParser()
-parser.add_argument('--config_id', required=True)
-parser.add_argument('--config_key', required=True)
-args=parser.parse_args()
-id=args.config_id
-secret=args.config_key
+id = os.environ['ID']
+secret = os.environ['KEY']
+# parser = argparse.ArgumentParser()
+# parser.add_argument('--config_id', required=True)
+# parser.add_argument('--config_key', required=True)
+# args=parser.parse_args()
+# id=args.config_id
+# secret=args.config_key
 
 
 path=sys.path[0]+r'/1.txt'
