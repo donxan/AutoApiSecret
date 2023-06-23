@@ -7,7 +7,10 @@ import argparse
 #files:	Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
 #user:	User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All
 #mail:  Mail.Read、Mail.ReadWrite、MailboxSettings.Read、MailboxSettings.ReadWrite
-#注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
+# 注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
+
+
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--config_id', required=True)
