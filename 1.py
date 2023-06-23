@@ -17,7 +17,6 @@ id=args.ID
 secret=args.KEY
 
 
-
 path=sys.path[0]+r'/1.txt'
 num1 = 0
 
@@ -64,10 +63,10 @@ def main():
             print('4调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
-            print('5调用成功'+str(num1)+'次')    
+            print('5调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
-            print('6调用成功'+str(num1)+'次')    
+            print('6调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
             print('7调用成功'+str(num1)+'次')
@@ -76,7 +75,7 @@ def main():
             print('8调用成功'+str(num1)+'次')
         if req.get(r'https://api.powerbi.com/v1.0/myorg/apps',headers=headers).status_code == 200:
             num1+=1
-            print('8调用成功'+str(num1)+'次') 
+            print('8调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
             num1+=1
             print('9调用成功'+str(num1)+'次')
