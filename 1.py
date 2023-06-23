@@ -11,8 +11,8 @@ import os
 # 注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
 
-id = os.environ['ID']
-secret = os.environ['KEY']
+
+
 # parser = argparse.ArgumentParser()
 # parser.add_argument('--config_id', required=True)
 # parser.add_argument('--config_key', required=True)
