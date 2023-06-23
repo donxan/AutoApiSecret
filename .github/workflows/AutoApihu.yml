@@ -44,4 +44,4 @@ jobs:
         
     - name: Test Api #Api调用
       run: | 
-        python 1.py --config-id $ID --config-key $KEY
+        python 1.py --ID $ID --KEY $KEY
