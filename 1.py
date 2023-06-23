@@ -1,14 +1,20 @@
 # -*- coding: UTF-8 -*-
 import requests as req
-import json,sys,time,random
+import json, sys, time, random
+import argparse
+# import parser
 #先注册azure应用,确保应用有以下权限:
 #files:	Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
 #user:	User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All
 #mail:  Mail.Read、Mail.ReadWrite、MailboxSettings.Read、MailboxSettings.ReadWrite
 #注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
-
-
+parser = argparse.ArgumentParser()
+parser.add_argument('--config-id',required=True)
+parser.add_argument('--config-key', required=True)
+args=parser.parse_args()
+id=args.ID
+secret=args.KEY
 
 
 
