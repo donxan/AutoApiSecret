@@ -12,12 +12,12 @@ import argparse
 
 
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument('--config_id', required=True)
-# parser.add_argument('--config_key', required=True)
-# args=parser.parse_args()
-# id=args.config_id
-# secret=args.config_key
+parser = argparse.ArgumentParser()
+parser.add_argument('--config_id', required=True)
+parser.add_argument('--config_key', required=True)
+args=parser.parse_args()
+id=args.config_id
+secret=args.config_key
 
 
 path=sys.path[0]+r'/1.txt'
