@@ -3,6 +3,8 @@ import requests as req
 import json, sys, time, random
 import argparse
 import os
+import pytz
+from datetime import datetime
 # import parser
 #先注册azure应用,确保应用有以下权限:
 #files:	Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
@@ -23,6 +25,14 @@ import os
 
 path=sys.path[0]+r'/1.txt'
 num1 = 0
+# get the timezone for China Standard Time (CST)
+cst = pytz.timezone('Asia/Shanghai')
+
+# get the current time in the CST timezone
+now = datetime.now(cst)
+
+# format the time as a string
+localtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'
@@ -43,7 +53,7 @@ def main():
     refresh_token = fo.read()
     fo.close()
     global num1
-    localtime = time.asctime( time.localtime(time.time()) )
+    # localtime = time.asctime( time.localtime(time.time()) )
     access_token=gettoken(refresh_token)
     headers={
     'Authorization':access_token,
