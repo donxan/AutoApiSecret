@@ -60,7 +60,7 @@ def main():
     'Content-Type':'application/json'
     }
     print('此次运行开始时间为 :', localtime)
-    with open(sys.path[0]+r'/time.log','a',encoding="utf-8") as fd:
+    with open(sys.path[0]+r'/time.log','w',encoding="utf-8") as fd:
         fd.write('运行开始时间为: %s \n' % localtime)
     try:
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
