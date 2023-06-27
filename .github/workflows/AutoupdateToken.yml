@@ -4,7 +4,7 @@ name: update refresh_token
 on: 
   release:
     types: [published]
-  push:
+  # push:
   #  tags:
   #  - 'v*'
     # branches: 
