@@ -4,17 +4,17 @@ name: Auto Api Human
 on: 
   release:
     types: [published]
-  push:
+  # push:
     # tags:
     # - 'v*'
-    branches: 
-    - main
+    # branches: 
+    # - main
   schedule:
     - cron: "0 9,13,16 * * 1-5"
   watch:
     types: [started]
-  repository_dispatch:
-    types: [webapi]
+  # repository_dispatch:
+  #   types: [webapi]
 jobs:
   build:
     runs-on: ubuntu-latest
